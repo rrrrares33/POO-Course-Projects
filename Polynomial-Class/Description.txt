@@ -1,0 +1,18 @@
+A polynomial will have 2 privates: 
+	1. unsigned int deg = the degree of the polynomial;
+	2. double *coef = dynamic allocated array of doubles to store polynomial coefficients. 
+
+Functionalities:
+	1.  Constructor without parameters and with parameters. (array of doubles for coeficients and an integer for degree of Polynomial);
+	2.  Destructor;
+	3.  Method "eval(int)" which calculates value of polynomial in a certain point (ex: A.eval(3))
+	4.  Methods "addCoef(double,int)" which adds a coeficient on a certain position	and "delCoef(int)" which deletes a coeficient (ex: A.addcoef(10,1)); 
+	5.  Method "getDeg()" which return polynomial degree (ex: A.getdeg());
+	6.  Overloading reading and writing operators for reading and writing Polynomial objects(">>"-reading & "<<"-writing);
+	7.  Overloading "=" to copy a Polynomial in another one (ex: Polynomial A = B);
+	8.  Overloading "+" to add to Polynomials, coefficient with coefficient (ex: A+B);
+	9.  Overloading "[]" to return coeficient of a certain degree (ex: A[1]);
+	10. Overloading "*" to multiply a polynomial with a number on both sides (ex: A*3 or 3*A);
+	11. Overloading "*" to multiply two polynomials. (ex: A*B);
+	12. Overloading "/" to divide two polynomials with quotient. (ex: A/B);
+		P.S. : For remainder, you can use the calculation formula: A + (-1) * ((A / B) * B);
